@@ -10,7 +10,7 @@ from custom_sink import conversions_api_io
 from datetime import timezone
 import datetime
 
-
+#  Google Cloud to Meta Conversions API Dataflow connector
 class MetaCAPIConnectorOptions(PipelineOptions):
     @classmethod
     def _add_argparse_args(cls, parser):
