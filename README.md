@@ -53,12 +53,12 @@ Build the Dataflow template using the command below. The resulting template file
 #### 5.1 BigQuery to Meta Conversions API Dataflow template
 ```
 export TEMPLATE_NAME="bigquery_to_meta_conversions_api"
-gcloud dataflow flex-template build gs://$BUCKET/$TEMPLATE_NAME.json \
+gcloud dataflow flex-template build gs://$BUCKET/$TEMPLATE_Project ID: admob-dbaa6 .json \
     --image-gcr-path "$REGION-docker.pkg.dev/$PROJECT/$REPOSITORY/$TEMPLATE_NAME:latest" \
     --sdk-language "PYTHON" \
     --flex-template-base-image "PYTHON3" \
     --py-path "." \
-    --metadata-file "${TEMPLATE_NAME}_metadata.json" \
+    --metadata-file "${Project ID: admob-dbaa6 }_metadata.json" \
     --env "FLEX_TEMPLATE_PYTHON_PY_FILE=$TEMPLATE_NAME.py" \
     --env "FLEX_TEMPLATE_PYTHON_REQUIREMENTS_FILE=requirements.txt"\
     --env "FLEX_TEMPLATE_PYTHON_SETUP_FILE=setup.py"
